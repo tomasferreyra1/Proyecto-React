@@ -6,8 +6,13 @@
     align-items: center;
     width: 100%; 
     height: 75px;
-    background-color: grey;
+    background-color: rgb(34, 40, 49);
     font-size: 15px;
+}
+
+.title {
+    color: rgb(255, 211, 105);
+    margin-left: 20px;
 }
 
 ul {
@@ -26,18 +31,18 @@ li {
 }
 
 li:hover {
-    background-color: white;
+    background-color: rgb(57, 62, 70);
 }
 
 a {
-    color: rgb(68, 192, 223);
+    color: rgb(255, 211, 105);
     text-decoration: none;
 }
 
 button {
     padding: 15px;
     margin-right: 10px;
-    color: rgb(68, 192, 223);
+    color: rgb(255, 211, 105);
     font-size: 16px;
     background-color: transparent;
     border-radius: 20px;
@@ -46,5 +51,16 @@ button {
 }
 
 button:hover {
-    background-color: white;
+    background-color: rgb(57, 62, 70);
+}
+
+.cart-icon {
+    font-size: 20px;
+    color: rgb(255, 211, 105);
+    padding: 15px;
+    transition: .2s;
+}
+
+.cart-icon:hover {
+    color: white;
 }
