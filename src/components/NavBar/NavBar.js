@@ -25,7 +25,7 @@ function NavBar()  {
             <div className='cart'>
                 <CartWidget/>
             </div>
-            <div>
+            <div className='login-button'>
                 <button>Login</button>
             </div>
         </div>
