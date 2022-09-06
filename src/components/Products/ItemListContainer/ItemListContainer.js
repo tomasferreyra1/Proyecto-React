@@ -4,7 +4,7 @@ import ItemList from '../ItemList/ItemList';
 
 
 import './ItemListStyles.css'
-import ItemCount from '../ItemCount/ItemCount';
+
 
 const ItemListContainer = () => { 
     const [items,setItems] = useState([]);
@@ -21,15 +21,11 @@ const ItemListContainer = () => {
         })
     },[])
 
+    console.log(items)
     return( 
         <>
-            <div className='itemListContainer'>
-                {items.length > 0 ? (
-                    <ItemList item={items}/>,
-                    <ItemCount stock={data.stock} initial={0}/>
-                ) : (
-                    <div>Cargando...</div>
-                )}
+            <div className='itemListCOntainer'>
+                <ItemList item={items}/>
             </div>
         </>
     )

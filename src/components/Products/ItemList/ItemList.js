@@ -4,6 +4,7 @@ import './ItemList.css'
 
 
 
+
 const ItemList = ({item}) => {
   return (
     <>
@@ -17,9 +18,9 @@ const ItemList = ({item}) => {
                         price={producto.price}
                         image={producto.image}
                         stock={producto.stock}
-                    />
-                )
-            })}
+                        />
+                        )
+                    })}
         </div>
     </>
   )
