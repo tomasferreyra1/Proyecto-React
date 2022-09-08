@@ -1,6 +1,6 @@
 
 .itemList {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    flex-flow: row wrap;
+    margin: 10px;
 }

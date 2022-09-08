@@ -1,0 +1,21 @@
+.contenedor-item {
+    margin: 50px 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    align-items: center;
+    background-color: rgb(0, 0, 0,.1);
+    border-radius: 20px;
+}
+
+.contenedor-item img {
+    margin: 20px;
+}
+
+.contenedor-item button {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}

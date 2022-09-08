@@ -7,9 +7,9 @@ function ItemCount({stock, initial}) {
 
     return(
         <div className='buttons'>               
-            <button onClick={() => setCount(count - 1)} disabled={count===0}> - </button>
+            <button className='boton' onClick={() => setCount(count - 1)} disabled={count===0}> - </button>
             <p>Cantidad: {count}</p>
-            <button onClick={() => setCount(count + 1)} disabled={count===stock}> + </button>
+            <button className='boton' onClick={() => setCount(count + 1)} disabled={count===stock}> + </button>
         </div>
     );
 };
