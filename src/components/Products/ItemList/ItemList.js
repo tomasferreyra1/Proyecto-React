@@ -6,9 +6,9 @@ const ItemList = ({item}) => {
   return (
     <>
         <div className="itemList">
-            {item.map((producto) => {
-                return (
-                    <Item
+            {item.map(producto => {
+              return (
+                <Item
                         id={producto.id} 
                         name={producto.name}
                         description={producto.description}
@@ -16,8 +16,8 @@ const ItemList = ({item}) => {
                         image={producto.image}
                         stock={producto.stock}
                         />
-                        )
-                    })}
+              )
+            })}
         </div>
     </>
   )

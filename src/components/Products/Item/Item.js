@@ -1,6 +1,6 @@
-
 import './item.css'
 import ItemCount from '../ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 const Item = ({id,name,price,image,stock}) => {
   return (
@@ -10,6 +10,9 @@ const Item = ({id,name,price,image,stock}) => {
         <h3>{name}</h3>
         <p>${price}</p>
         <p>Stock disponible: {stock}</p>
+        <Link to={`/item/${id}`}>
+          <button>Ver detalles</button>
+        </Link>
         <ItemCount stock={stock} initial={0}/> 
     </div>
   )
