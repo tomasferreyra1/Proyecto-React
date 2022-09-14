@@ -1,6 +1,19 @@
 .buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin: 20px;
     align-items: center;
+}
+
+.buttons .boton {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 30px;
+    padding: 5px;
+    width: 40px;
+}
+
+.boton-agregar {
+    margin-bottom: 30px;
 }
