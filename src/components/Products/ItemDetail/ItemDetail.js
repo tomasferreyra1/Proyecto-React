@@ -1,15 +1,19 @@
 import '../Item/item.css'
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
-import { useState } from 'react'
+import { useState , useContext } from 'react'
+import { CartContext } from '../../../context/CartContext'
 
 
 const ItemDetail = ({item}) => {
+
+  const {addItem} = useContext(CartContext)
   
   const [counter, setCounter] = useState(0)
 
   const onAdd = (dato) => {
     setCounter(dato)
+    addItem(item,dato)
   }
 
   return (
