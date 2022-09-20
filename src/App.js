@@ -6,8 +6,8 @@ import ItemListContainer from './components/Products/ItemListContainer/ItemListC
 import ItemDetailContainer from './components/Products/ItemDetailContainer/ItemDetailContainer';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
-import cartContainer from './components/Products/cartContainer/cartContainer';
-import cartProvider  from './context/CartContext';
+import CartProvider  from './Context/CartContext';
+import CartContainer from './components/Products/CartContainer/CartContainer'
 
 
 import {BrowserRouter,Route,Routes} from 'react-router-dom' 
@@ -15,7 +15,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 function App() {
   return(
-    <cartProvider>
+    <CartProvider>
       <BrowserRouter>
         <div className="App">
           <NavBar/>
@@ -24,11 +24,11 @@ function App() {
             <Route exact path='/contact' element={<Contact/>}/>
             <Route exact path='/products' element={<ItemListContainer/>}/> 
             <Route exact path='/item/:productId' element={<ItemDetailContainer/>}/>
-            <Route exact path='/cart' element={<cartContainer/>}/>          
+            <Route exact path='/cart' element={<CartContainer/>}/>          
            </Routes>
         </div>
       </BrowserRouter>
-    </cartProvider>
+    </CartProvider>
   );
 };
 

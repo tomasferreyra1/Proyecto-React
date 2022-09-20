@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
-import { CartContext } from "../../../context/CartContext"
+import { CartContext } from "../../../Context/CartContext"
 
 
-export const cartContainer = () => {
+const CartContainer = () => {
     const {productCartList, removeItem} = useContext(CartContext);
     
     return (
@@ -11,7 +11,7 @@ export const cartContainer = () => {
             <div>
                 {productCartList.map(item => (
                     <>
-                        <p>{item.title} - {item.quantity}</p>
+                        <p>{item.name} - {item.quantity}</p>
                         <button onClick={()=> removeItem(item.id)}>Eliminar producto</button>
                     </>
                 ))}
@@ -19,3 +19,5 @@ export const cartContainer = () => {
         </div>
     )
 }
+
+export default CartContainer
