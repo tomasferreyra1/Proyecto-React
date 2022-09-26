@@ -1,4 +1,4 @@
-import React , { createContext, useState } from "react";
+import React , { useState } from "react";
 
 export const CartContext = React.createContext();
 
@@ -7,12 +7,11 @@ const CartProvider = ({ children }) => {
 
   const isInCart = (productId) => {
     const productExist = productCartList.some(item => item.id === productId)
-    return productExist
+    return productExist;
   }
 
   const addItem = (item, quantity) => {
     console.log("item: ", item, "quantity: ", quantity);
-    
     const newProduct = {
         ...item,
         quantity
