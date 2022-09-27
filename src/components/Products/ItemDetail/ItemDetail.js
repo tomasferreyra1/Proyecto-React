@@ -5,7 +5,6 @@ import { useState , useContext } from 'react'
 import { CartContext } from '../../../Context/CartContext'
 import { Link } from 'react-router-dom'
 
-
 const ItemDetail = ({item}) => {
 
   const {addItem} = useContext(CartContext)
@@ -14,15 +13,16 @@ const ItemDetail = ({item}) => {
 
   const onAdd = (dato) => {
     setCounter(dato)
-    addItem(item,dato)
+    addItem(item, dato)
   }
 
   return (
     <div>
+      <p>Detalle del ítem</p>
       <div className='contenedor-item'>
         <img className="imagen-instrumento" src={item.image}/>
-        <p>{item.id}</p>
         <h3>{item.name}</h3>
+        <p>{item.categoria}</p>
         <p>${item.price}</p>
         <br></br>
         <p>Cantidad disponible: {item.stock}</p>

@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     name: "Guitarra Rosa",
-    category: "Guitarra",
+    categoria: "Guitarra",
     price: "150",
     image: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-b5a91.appspot.com/o/guitarra-rosada.jpg?alt=media&token=579ff3a7-c5cd-430c-88f4-fb981b241afe",
     stock: 11
@@ -10,7 +10,7 @@ const data = [
   {
     id: 2,
     name: "Guitarra Roja",
-    category: "Guitarra",
+    categoria: "Guitarra",
     price: "170",
     image: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-b5a91.appspot.com/o/guitarra-roja.jpg?alt=media&token=5be05397-adcf-453d-b13f-46cf2ff71f9e",
     stock: 6
@@ -18,7 +18,7 @@ const data = [
   {
     id: 3,
     name: "Guitarra Negra",
-    category: "Guitarra",
+    categoria: "Guitarra",
     price: "200",
     image: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-b5a91.appspot.com/o/guitarra-negra.jpg?alt=media&token=0cdb8a2c-5f4f-4fd6-b66a-97bbfec3b396",
     stock: 8
@@ -26,7 +26,7 @@ const data = [
   {
     id: 4,
     name: "Guitarra Negra V",
-    category: "Guitarra",
+    categoria: "Guitarra",
     price: "165",
     image: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-b5a91.appspot.com/o/guitarra-negra-v.jpg?alt=media&token=da393b98-b9a5-4480-bf15-52c6696889e2",
     stock: 15

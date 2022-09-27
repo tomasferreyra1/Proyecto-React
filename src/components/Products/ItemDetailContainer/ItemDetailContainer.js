@@ -9,20 +9,26 @@ import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const {productId} = useParams();
-  const [item, setItems] = useState({})
+  const [item, setItem] = useState({})
 
-  useEffect (() => {
-    const getProducto = async() => {
-      const queryRef = doc(db,'items',productId);
-      const response = await getDoc(queryRef);
-      const newItem = {
-        id: response.id,
-        ...response.data(),
-      }
-      setItems(newItem)
+  useEffect(()=>{
+    const getProducto = async()=>{
+        //creamos la referencia del producto
+        const queryRef = doc(db,"items",productId);
+        //hacemos la solicitud
+        const response = await getDoc(queryRef);
+        // console.log(response.data())
+        const newItem = {
+            id: response.id,
+            ...response.data(),
+        }
+        console.log(newItem);
+        setItem(newItem)
     }
     getProducto();
-  },[productId])
+},[productId])
+
+console.log('item:', item)
 
   return (
     <div className="item-detail-container">
