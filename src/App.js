@@ -7,10 +7,7 @@ import ItemDetailContainer from './components/Products/ItemDetailContainer/ItemD
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
 import CartProvider  from './Context/CartContext';
-import CartContainer from './components/Products/CartContainer/CartContainer'
-
-
-
+import CartContainer from './components/Products/CartContainer/cartContainer'
 import {BrowserRouter,Route,Routes} from 'react-router-dom' 
 
 
