@@ -3,7 +3,7 @@ import React , { useState } from "react";
 export const CartContext = React.createContext();
 
 const CartProvider = ({ children }) => {
-  let [productCartList, setProductCartList] = useState([]);
+  const [productCartList, setProductCartList] = useState([]);
 
   const isInCart = (productId) => {
     const productExist = productCartList.some(item => item.id === productId)
@@ -13,8 +13,8 @@ const CartProvider = ({ children }) => {
   const addItem = (item, quantity) => {
     console.log("item: ", item, "quantity: ", quantity);
     const newProduct = {
-        ...item,
-        quantity
+      ...item,
+      quantity
     }
 
     if (isInCart(item.id)) {

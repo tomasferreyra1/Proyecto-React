@@ -13,11 +13,8 @@ const ItemDetailContainer = () => {
 
   useEffect(()=>{
     const getProducto = async()=>{
-        //creamos la referencia del producto
         const queryRef = doc(db,"items",productId);
-        //hacemos la solicitud
         const response = await getDoc(queryRef);
-        // console.log(response.data())
         const newItem = {
             id: response.id,
             ...response.data(),
@@ -26,9 +23,9 @@ const ItemDetailContainer = () => {
         setItem(newItem)
     }
     getProducto();
-},[productId])
+  },[productId])
 
-console.log('item:', item)
+  console.log('item:', item)
 
   return (
     <div className="item-detail-container">
