@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react"
 import { Link } from "react-router-dom";
 import { CartContext } from "../../../Context/CartContext"
 import { db } from "../../utils/firebase";
-import { collection, addDoc, doc, updateDoc } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 
 
 const CartContainer = () => {
@@ -27,18 +27,11 @@ const CartContainer = () => {
         });
     }
 
-    const updateOrder = () => {
-        const queryRef = doc(db,'orders','RCZVi8BVfSogo6bzCAoV')
-        updateDoc(queryRef, {
-            total:14
-        }).then(response => console.log(response))
-    }
-
     return (
         <div>
             { idOrder ?
                 <>
-                    <p>Su orden fue creada, id {idOrder}</p>
+                    <p>Su orden fue creada, id: {idOrder}</p>
                     <Link to='/'>
                         Ir al listado de productos
                     </Link>

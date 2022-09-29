@@ -19,7 +19,7 @@ const ItemListContainer = () => {
             const resultados = response.docs.map(doc => {
                 const newItem = {
                     id:doc.id,
-                    ...doc.data(),
+                    ...doc.data()
                 }
                 return newItem
             });
@@ -29,7 +29,12 @@ const ItemListContainer = () => {
 
     return( 
         <div className='itemListContainer'>
-            <ItemList item={items}/>
+            {
+                items.length > 0 ? 
+                (<ItemList item={items}/>)
+                :
+                (<div><h3>Cargando...</h3></div>)
+            }
         </div>
     )
 }
