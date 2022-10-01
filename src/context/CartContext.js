@@ -2,7 +2,7 @@ import React , { useState } from "react";
 
 export const CartContext = React.createContext();
 
-const CartProvider = ({ children }) => {
+export const CartProvider = ({ children }) => {
   const [productCartList, setProductCartList] = useState([]);
 
   const isInCart = (productId) => {
@@ -56,5 +56,3 @@ const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
-
-export default CartProvider;
