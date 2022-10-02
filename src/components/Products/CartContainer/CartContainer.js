@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react"
 import { Link } from "react-router-dom";
 import { CartContext } from "../../../Context/CartContext"
-import { db } from "../../utils/firebase";
+import { db } from "../../../utils/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 
-const CartContainer = () => {
+export const CartContainer = () => {
     const {productCartList, removeItem, clear, getTotalPrice} = useContext(CartContext);
     const [idOrder, setIdOrder] = useState('');
     
@@ -75,5 +75,3 @@ const CartContainer = () => {
         </div>
     )
 }
-
-export default CartContainer
