@@ -44,11 +44,13 @@ export const CartContainer = () => {
                     <div>
                         {productCartList.map(item => (
                             <div className="item-cart-container">
-                                <p>{item.name}</p>
-                                <p>Cantidad: {item.quantity}</p>
-                                <p>Precio unitario: ${item.price}usd</p>
-                                <p>Precio productos: {item.quantityPrice}</p>
-                                <button onClick={()=> removeItem(item.id)}>Eliminar producto</button>
+                                <div className="item-cart">
+                                    <p>{item.name}</p>
+                                    <p>Cantidad: {item.quantity}</p>
+                                    <p>Precio unitario: ${item.price} usd</p>
+                                    <p>Precio productos: ${item.price*item.quantity} usd</p>
+                                    <button onClick={()=> removeItem(item.id)}>Eliminar producto</button>
+                                </div>
                             </div>
                         ))}
                         <button onClick={clear}>Vaciar carrito</button>

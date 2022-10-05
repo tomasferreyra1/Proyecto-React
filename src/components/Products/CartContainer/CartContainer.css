@@ -8,6 +8,14 @@ p {
 }
 
 .item-cart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-cart {
+    align-items: center;
     background-color: rgb(28, 32, 39);
     color: white;
     height: 40%;

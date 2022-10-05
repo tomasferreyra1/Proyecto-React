@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+Hola, bienvenido a mi proyecto de react, este se trata de una tienda de instrumentos.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Video exploracion de la tienda: https://youtu.be/xrwYH2j5pJY
 
-## Available Scripts
+INTRODUCCION
+Este e-commerce consta de 5 rutas, las cuales son: Products, About us, Contact, Item y Cart, solo indagaremos en los apartados de pruductos y su compra, como tambien el carrito y su funcionamiento.
 
-In the project directory, you can run:
+PRODUCTS
+Al ingresar a la pagina en su respectivo navbar encontraremos el home, el cual nos conduce hacia todos los productos disponibles de la tienda, los cuales cuentan cada uno con su respectivo modelo, precio y stock. Si nos posicionamos con el cursor del mouse se logra ver un boton que nos lleva a los detalles de ese item.
 
-### `npm start`
+ITEM
+Una vez dentro de los detalles del item, se nos despliega la carta de dicho item con los datos mencionados en el apartado de PRODUCTS, mas algunos muy interesantes como: dos botones que sirven para agregar o quitar productos (minimo 0 y maximo dependiendo la cantidad del stock), un indicador de cuantos productos llevamos y al final de la tarjeta encontramos un boton que nos agrega el/los producto/s seleccionado/s al carrito.
+Si hemos agregado productos al carrito, en la parte inferior a la tarjeta del item aparecera un nuevo boton que nos llevara hacia el carrito.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+CARRITO
+Ingresando al apartado del carrito lograras ver la cantidad de productos que tenes, con sus respectivos datos y ademas cuenta con un boton para eliminar todos los productos de ese tipo. Tambien fuera de los items 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+COMPRA
+En este punto nos encontraremos ciertas herramientas que mejoran la experiencia del usuario que son las siguientes: un boton que vacia el carrito (elimina todos los productos), el precio total del carrito y un formulario para completar con el nombre, telefono y correo, el cual seran datos que se necesitaran para crear la orden del cliente. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+DETALLES EXTRAS
+No se utilizo ningun tipo de frameworks para los visuales, solo un icono de el siguiente link: https://fontawesome.com/.
