@@ -33,7 +33,7 @@ const ItemListContainer = () => {
                 items.length > 0 ? 
                 (<ItemList item={items}/>)
                 :
-                (<div><h3>Cargando...</h3></div>)
+                (<div className='Cargando'><h3>Cargando...</h3></div>)
             }
         </div>
     )

@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react"
+import './CartContainer.css'
 import { Link } from "react-router-dom";
 import { CartContext } from "../../../Context/CartContext"
 import { db } from "../../../utils/firebase";
@@ -42,7 +43,7 @@ export const CartContainer = () => {
                     productCartList.length > 0 ?
                     <div>
                         {productCartList.map(item => (
-                            <div>
+                            <div className="item-cart-container">
                                 <p>{item.name}</p>
                                 <p>Cantidad: {item.quantity}</p>
                                 <p>Precio unitario: ${item.price}usd</p>
@@ -51,20 +52,20 @@ export const CartContainer = () => {
                             </div>
                         ))}
                         <button onClick={clear}>Vaciar carrito</button>
-                        <p>Precio total: {getTotalPrice()}</p>
-                        <form onSubmit={sendOrder}>
-                            <label>Nombre: </label>
+                        <p className="total-price">Precio total: ${getTotalPrice()} usd</p>
+                        <form className="form" onSubmit={sendOrder}>
+                            <label className="label">Nombre: </label>
                             <input type='text'/>
-                            <label>Telefono: </label>
+                            <label className="label">Telefono: </label>
                             <input type='text'/>
-                            <label>Correo: </label>
+                            <label className="label">Correo: </label>
                             <input type='email'/>
                             <button type="submit">Enviar orden</button>
                         </form>
                     </div>
                     :
                     <>
-                        <p>El carrito está vacio, agrega algún producto</p>
+                        <p className="cartTitle">El carrito está vacio, agrega algún producto</p>
                         <Link to='/products'>
                             Ir al listado de productos
                         </Link>

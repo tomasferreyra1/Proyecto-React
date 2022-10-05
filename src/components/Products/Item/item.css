@@ -1,5 +1,6 @@
 
 .item {
+    height: 320px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -7,6 +8,27 @@
     margin: 40px;
     padding: 10px;
     color: white;
+    transition: .25s;
+    background-color: rgb(44, 50, 60);
+    border-radius: 20px;
+}
+
+.item .id {
+    visibility: hidden;
+}
+
+.item:hover {
+    width: 250px;
+    height: 400px;
+}
+
+.item button {
+    visibility: hidden;
+    transition: .1s;
+}
+
+.item:hover button {
+    visibility: visible;
 }
 
 img {

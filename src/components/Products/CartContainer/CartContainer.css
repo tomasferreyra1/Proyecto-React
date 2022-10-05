@@ -1,0 +1,23 @@
+p {
+    color: white;
+}
+
+.cartTitle {
+    color: white;
+    font-size: 20px;
+}
+
+.item-cart-container {
+    background-color: rgb(28, 32, 39);
+    color: white;
+    height: 40%;
+    width: 30%;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.form .label {
+    color: white;
+    margin: 10px 20px;
+}

@@ -19,3 +19,8 @@
     align-items: center;
     width: 200px;
 }
+
+.container p {
+    color: white;
+    font-size: 17px;
+}
